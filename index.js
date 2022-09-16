@@ -27,48 +27,44 @@ buttons.forEach((element) => {
       counter = 1;
     }
     header = document.querySelector(".header");
-    
 
-// looping over rows
+    // looping over rows
     for (j = 0; j < 3; j++) {
       for (i = 0; i < 3; i++) {
         if (matrix[j][i] != "") {
           continue;
+        } else {
+          break;
         }
-        else{
-            break;
+        if (matrix[j][1] + matrix[j][2] + matrix[j][3] == 0) {
+          winning = "Yellow won";
+          console.log(winning);
         }
-        if((matrix[j][1]+matrix[j][2]+matrix[j][3]==0){
-            winning="Yellow won";
-            console.log(winning)
-        }
-        if((matrix[j][1]+matrix[j][2]+matrix[j][3]==1)){
-            winning="red won";
-            console.log(red)
+        if (matrix[j][1] + matrix[j][2] + matrix[j][3] == 1) {
+          winning = "red won";
+          console.log(red);
         }
       }
     }
 
     // looping over columns
     for (j = 0; j < 3; j++) {
-        for (i = 0; i < 3; i++) {
-          if (matrix[i][j] != "") {
-            continue;
-          }
-          else{
-              break;
-          }
-          if((matrix[1][j]+matrix[2][j]+matrix[3][j]==0){
-              winning="Yellow won";
-              console.log(winning)
-          }
-          if((matrix[1][j]+matrix[2][j]+matrix[3][j]==1)){
-              winning="red won";
-              console.log(red)
-          }
+      for (i = 0; i < 3; i++) {
+        if (matrix[i][j] != "") {
+          continue;
+        } else {
+          break;
+        }
+        if (matrix[1][j] + matrix[2][j] + matrix[3][j] == 0) {
+          winning = "Yellow won";
+          console.log(winning);
+        }
+        if (matrix[1][j] + matrix[2][j] + matrix[3][j] == 1) {
+          winning = "red won";
+          console.log(red);
         }
       }
-
+    }
   });
 });
 
