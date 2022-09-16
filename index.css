@@ -1,0 +1,18 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100vh;
+  background-color: bisque;
+  padding: 20vh;
+}
+
+.btn {
+  height: 20vh;
+  width: 50vh;
+}
