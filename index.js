@@ -27,7 +27,9 @@ buttons.forEach((element) => {
       counter = 1;
     }
     header = document.querySelector(".header");
-    console.log(check(header));
+    
+
+// looping over rows
     for (j = 0; j < 3; j++) {
       for (i = 0; i < 3; i++) {
         if (matrix[j][i] != "") {
@@ -47,6 +49,7 @@ buttons.forEach((element) => {
       }
     }
 
+    // looping over columns
     for (j = 0; j < 3; j++) {
         for (i = 0; i < 3; i++) {
           if (matrix[i][j] != "") {
@@ -59,7 +62,7 @@ buttons.forEach((element) => {
               winning="Yellow won";
               console.log(winning)
           }
-          if((matrix[j][1]+matrix[j][2]+matrix[j][3]==1)){
+          if((matrix[1][j]+matrix[2][j]+matrix[3][j]==1)){
               winning="red won";
               console.log(red)
           }
