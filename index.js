@@ -28,11 +28,21 @@ buttons.forEach((element) => {
     }
     header = document.querySelector(".header");
     console.log(check(header));
-    for(j=0;j<3;j++)
-    for(i=0;i<3;i++){
-        if{matrix[]}
+    for (j = 0; j < 3; j++) {
+      for (i = 0; i < 3; i++) {
+        if (matrix[j][i] != "") {
+          continue;
+        }
+        else{
+            break;
+        }
+        if((matrix[j][1]+matrix[j][2]+matrix[j][3]==0){
+            winning="Yellow";
+            console.log(winning)
+        }
+        if
+      }
     }
-
   });
 });
 
