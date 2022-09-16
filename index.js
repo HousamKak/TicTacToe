@@ -37,12 +37,35 @@ buttons.forEach((element) => {
             break;
         }
         if((matrix[j][1]+matrix[j][2]+matrix[j][3]==0){
-            winning="Yellow";
+            winning="Yellow won";
             console.log(winning)
         }
-        if
+        if((matrix[j][1]+matrix[j][2]+matrix[j][3]==1)){
+            winning="red won";
+            console.log(red)
+        }
       }
     }
+
+    for (j = 0; j < 3; j++) {
+        for (i = 0; i < 3; i++) {
+          if (matrix[i][j] != "") {
+            continue;
+          }
+          else{
+              break;
+          }
+          if((matrix[1][j]+matrix[2][j]+matrix[3][j]==0){
+              winning="Yellow won";
+              console.log(winning)
+          }
+          if((matrix[j][1]+matrix[j][2]+matrix[j][3]==1)){
+              winning="red won";
+              console.log(red)
+          }
+        }
+      }
+
   });
 });
 
