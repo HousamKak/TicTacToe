@@ -5,53 +5,61 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="index.css" />
-    <title>Document</title>
+    <title>TIC-TAC-TOE</title>
   </head>
   <body>
-
-    <section ></section>
-      <div class="sec" >
+    <section class="cont">
+      <div class="sec">
         <h3 class="game">TIC-TAC-TOE</h3>
       </div>
-      
-        <div class="header">
+      <div class="score">
+        <p>Yellow: <span id="yellow-score">0</span></p>
 
-            <div class="e1">
-              <button class="btn">
-                <img id="img1" class="img" />
-              </button>
-              <button class="btn">
-                <img id="img2" class="img" />
-              </button>
-              <button class="btn">
-                <img id="img3" class="img" />
-              </button>
-            </div>
+        <p>Red: <span id="red-score">0</span></p>
+      </div>
 
-            <div>
-              <button class="btn">
-                <img id="img4" class="img" />
-              </button>
-              <button class="btn">
-                <img id="img5" class="img" />
-              </button>
-              <button class="btn">
-                <img id="img6" class="img" />
-              </button>
-            </div>
-
-            <div>
-              <button class="btn">
-                <img id="img7" class="img" />
-              </button>
-              <button class="btn">
-                <img id="img8" class="img" />
-              </button>
-              <button class="btn">
-                <img id="img9" class="img" />
-              </button>
-            </div>
+      <div class="header">
+        <div class="components">
+          <div class="e1">
+            <button class="btn">
+              <img id="img1" class="img" />
+            </button>
+            <button class="btn">
+              <img id="img2" class="img" />
+            </button>
+            <button class="btn">
+              <img id="img3" class="img" />
+            </button>
           </div>
+
+          <div class="e2">
+            <button class="btn">
+              <img id="img4" class="img" />
+            </button>
+            <button class="btn">
+              <img id="img5" class="img" />
+            </button>
+            <button class="btn">
+              <img id="img6" class="img" />
+            </button>
+          </div>
+          <div class="e3">
+            <button class="btn">
+              <img id="img7" class="img" />
+            </button>
+            <button class="btn">
+              <img id="img8" class="img" />
+            </button>
+            <button class="btn">
+              <img id="img9" class="img" />
+            </button>
+          </div>
+        </div>
+
+        <div class="winner">
+          <p>The winner is : <span id="winner-name">Yellow</span></p>
+        </div>
+      </div>
     </section>
     <script src="/index.js"></script>
   </body>
