@@ -4,20 +4,37 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: #600d2d;
+}
 .header {
-  display: flex;
-  flex-wrap: wrap;
-  height: 100vh;
-  background-color: bisque;
-  padding: 20vh;
+  background-image: url(/images/board.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 90vh;
+  width: 50%;
 }
 
 .btn {
   height: 20vh;
-  width: 50vh;
+  width: 20vh;
+  margin-right: 2vw;
+  background-color: white;
+  border: none;
+  margin-top: 3vh;
+  border: none;
 }
 
 .img {
-  height: 80%;
   width: 80%;
+  height: 80%;
+}
+
+.sec {
+  text-align: center;
+  color: white;
+}
+
+.e1 {
 }
